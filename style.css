@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+    font-family: 'Jura', sans-serif;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+body {
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+/*  margin: 70px auto;*/
+  background:white;
+  padding:2em;
+  text-align: justify;
+/*  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);*/
+}
+
+body.fixed-nav .wrapper {
+/*    background-color: orange;*/
+}
+
+
+header {
+        font-family: 'Changa', sans-serif;
+    text-align: center;
+    height:30vh;
+    background-image: url(img/georgie-cobbs-467923-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: white;
+}
+
+h1 {
+  color:white;
+  font-size: 5vw;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav {
+  background:black;
+  top:0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+}
+
+nav li {
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width:0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-size: .5em;
+}
+
+li.logo a {
+  color:black;
+}
+
+.fixed-nav li.logo {
+  max-width:500px;
+}
+
+nav a {
+  text-decoration: none;
+  padding:20px;
+  display: inline-block;
+  color:white;
+  transition:all 0.2s;
+  text-transform: uppercase;
+}
+
+
+.empty {
+/*    background-image: url(img/hugo-barbosa-447400-unsplash.jpg);*/
+/*    position: fixed;*/
+    height: 50hv;
+        opacity: 0;
+
+}
