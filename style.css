@@ -1,25 +1,20 @@
 html {
-  box-sizing: border-box;
-  background-color: white;
     font-family: 'Jura', sans-serif;
-  font-size: 1.3em;
-  font-weight: 200;
-    
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    font-weight: 200;
 }
+
 body {
-  margin: 0;
-}
-*, *:before, *:after {
-  box-sizing: border-box;
+    color:#555;
+    margin: 0;
 }
 
 .wrapper {
-/*  margin: 70px auto;*/
-  background:white;
-  padding:2em;
+  background-color:white;
+  padding:4em;
   text-align: justify;
-/*  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);*/
-    
 }
 
 body.fixed-nav .wrapper {
@@ -30,8 +25,8 @@ body.fixed-nav .wrapper {
 header {
         font-family: 'Changa', sans-serif;
     text-align: center;
-    height:30vh;
-    background-image: url(img/georgie-cobbs-467923-unsplash.jpg);
+    height:35vh;
+    background-image: url(img/alexandru-acea-1097074-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -49,7 +44,7 @@ h1 {
 }
 
 nav {
-  background:black;
+  background:#191d21;
   top:0;
   width: 100%;
   transition:all 0.5s;
@@ -74,6 +69,12 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+        transition: .2s ease-in-out;
+
+}
+
+nav li:hover {
+    background-color: orange;
 }
 
 li.logo {
@@ -104,23 +105,26 @@ nav a {
 
 
 .empty {
-/*    background-image: url(img/hugo-barbosa-447400-unsplash.jpg);*/
-/*    position: fixed;*/
     background-color: none;
-    min-height: 50vh;
-/*        opacity: 0;*/
+/*    min-height: 50vh;*/
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+        font-family: 'Changa', sans-serif;
 
 }
 
+/*
 .gray {
     background-color: #EEE;
 }
+*/
 
 #background {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    background-image: url(img/hugo-barbosa-447400-unsplash.jpg);
+    background-image: url(img/alexandru-acea-1097074-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -131,19 +135,14 @@ nav a {
 
 
 .container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 30px 30px 30px 30px;
     padding-top: 1em;
     padding-bottom: 1em;
     user-select: none;
     display: grid;
-    grid-auto-flow: column;
-        grid-gap: 3.3em;
-}
-.prj-container {
-    user-select: none;
-    display: grid;
-grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3.3em;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr ) ;
 }
 
 
@@ -155,16 +154,28 @@ grid-auto-flow: row;
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 0em;
-    padding: .5em;
     transition: .5s cubic-bezier(0.68, 0, 0.27, 1.55);
-
+    color: white;
 }
+
+.grid-item:hover {
+    transform: rotateZ(-360deg) ;    
+}
+
+
+.prj-container {
+    user-select: none;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3.3em;
+}
+
 .grid-prj-item {
     font-size: .5em;
-    background-color: ghostwhite;
+/*    background-color: #fafafa;*/
     opacity: .8;
-    border: 1px dashed lightgray;
+    border: 1px dashed white;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -174,22 +185,53 @@ grid-auto-flow: row;
 
 }
 
-.grid-item:hover {
-    transform: rotateZ(-360deg) ;
-    
-}
 
 .grid-prj-item:hover {
-    transform: scale(1.05);
-    
+/*    transform: scale(1.05);*/
+        border: 1px dashed lightgray;
 }
+
+.footer {
+    padding: 1em;
+    font-size: .7em;
+    text-align: center;
+    box-shadow: none;
+    border-top: 1px dashed gainsboro;
+    background-color: #191d21;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.footer-item:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+
+
+
+
 
 
 @media (max-width: 760px) {
-    .container { grid-auto-flow: row; grid-template-columns: 1fr 1fr 1fr }
+    .container { grid-auto-flow: row; grid-template-columns: 1fr 1fr }
     .prj-container {grid-template-columns: 1fr 1fr}
-/*    grid-template-columns: auto*/
-/*    grid-template-columns: 1fr ;*/
-
 }
     
