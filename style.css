@@ -241,7 +241,8 @@ a:active {
     .prj-container {grid-template-columns: 1fr 1fr}
     html {font-size: 2em; font-weight: 200; }
     .wrapper {padding: 1em;}
-}
+    .grid-item {font-size: 1em;}
+    .footer {    font-size: 1em;}
 
 }
     
