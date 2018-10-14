@@ -176,7 +176,7 @@ nav a {
 .grid-prj-item {
     font-size: .5em;
 /*    background-color: #fafafa;*/
-    opacity: .8;
+    opacity: .4;
     border: 1px dashed white;
     display: flex;
     flex-flow: column;
@@ -194,7 +194,7 @@ opacity: 1;
 }
 
 .footer {
-/*    padding: 1em;*/
+    padding: .2em;
     font-size: .7em;
     text-align: center;
     box-shadow: none;
@@ -212,6 +212,8 @@ opacity: 1;
 .footer-item {
     padding: 2em;
     cursor: pointer;
+            transition: .2s ease-in-out;
+
 }
 
 .footer-item:hover {
@@ -236,7 +238,7 @@ a:active {
 
 
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
     .container { grid-auto-flow: row; grid-template-columns: 1fr 1fr }
     .prj-container {grid-template-columns: 1fr 1fr}
     html {font-size: 2em; font-weight: 200; }
