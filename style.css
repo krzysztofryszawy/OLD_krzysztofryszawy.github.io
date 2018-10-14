@@ -74,7 +74,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: orange;
+    background-color: darkorange;
 }
 
 li.logo {
@@ -149,17 +149,19 @@ nav a {
 .grid-item {
     font-size: .5em;
 /*    background-color: ghostwhite;*/
-    opacity: .8;
 /*    border: 1px dashed lightgray;*/
     display: flex;
     flex-flow: column;
     align-items: center;
-    transition: .5s cubic-bezier(0.68, 0, 0.27, 1.55);
+    transition: .3s ease-in;
+/*    transition: .5s cubic-bezier(0.68, 0, 0.27, 1.55);*/
     color: white;
 }
 
 .grid-item:hover {
-    transform: rotateZ(-360deg) ;    
+    
+    transform: rotateY(-360deg) ;
+        
 }
 
 
@@ -182,17 +184,17 @@ nav a {
     margin: 0em;
     padding: .5em;
     transition: .2s cubic-bezier(0.68, 0, 0.27, 1.55);
-
 }
 
 
 .grid-prj-item:hover {
+opacity: 1;
 /*    transform: scale(1.05);*/
         border: 1px dashed lightgray;
 }
 
 .footer {
-    padding: 1em;
+/*    padding: 1em;*/
     font-size: .7em;
     text-align: center;
     box-shadow: none;
@@ -202,14 +204,18 @@ nav a {
     text-decoration: none;
     display: flex;
     flex-flow: row;
-    align-items:center;
+/*    align-items:center;*/
     justify-content: space-around;
 
 }
 
-.footer-item:hover {
-    color: blue;
+.footer-item {
+    padding: 2em;
     cursor: pointer;
+}
+
+.footer-item:hover {
+    background-color: darkorange;
 }
 
 a:link {
@@ -233,5 +239,9 @@ a:active {
 @media (max-width: 760px) {
     .container { grid-auto-flow: row; grid-template-columns: 1fr 1fr }
     .prj-container {grid-template-columns: 1fr 1fr}
+    html {font-size: 2em; font-weight: 200; }
+    .wrapper {padding: 1em;}
+}
+
 }
     
