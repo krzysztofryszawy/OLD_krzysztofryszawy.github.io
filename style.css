@@ -236,7 +236,7 @@ a:active {
 
 
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
     .container { grid-auto-flow: row; grid-template-columns: 1fr 1fr }
     .prj-container {grid-template-columns: 1fr 1fr}
     html {font-size: 2em; font-weight: 200; }
