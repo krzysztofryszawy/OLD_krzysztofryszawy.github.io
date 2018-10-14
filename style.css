@@ -208,7 +208,7 @@ a:active {
     body nav {font-size: 2em; font-weight: 200;}
     .wrapper {padding: 1em; font-size: 2em; font-weight: 200}
     .dev-container {  grid-auto-flow: row; grid-template-columns: 1fr 1fr }
-    .grid-dev-item {font-size: 1.5em; padding: 1em}
+    .grid-dev-item {font-size: 2em; padding: 1em}
     .prj-container {grid-template-columns: 1fr 1fr}
     .footer {font-size: 1em}
 }
