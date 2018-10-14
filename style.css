@@ -240,8 +240,9 @@ a:active {
 
 @media (max-width: 1000px) {
     body.fixed-nav nav {font-size: 2em; font-weight: 200;}
-    .wrapper { font-size: 2em; font-weight: 200; grid-auto-flow: row; grid-template-columns: 1fr 1fr }
-    .grid-item {font-size: 1em;}
+    .container { font-size: 2em; font-weight: 200; grid-auto-flow: row; grid-template-columns: 1fr 1fr }
+    .wrapper { font-size: 2em; font-weight: 200}
+    .grid-item {font-size: .7em;}
     .prj-container {grid-template-columns: 1fr 1fr}
     .wrapper {padding: 1em;}
     .footer {    font-size: 1em;}
