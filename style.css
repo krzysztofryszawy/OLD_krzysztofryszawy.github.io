@@ -222,7 +222,7 @@ a:active {
     color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     body nav {font-size: 1.5em; font-weight: 200;}
     .wrapper {padding: 1em; font-size: 2em; font-weight: 200}
     .dev-container {grid-auto-flow: row; grid-template-columns: 1fr 1fr }
