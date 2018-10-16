@@ -9,12 +9,16 @@ html {
 body {
     color:#555;
     margin: 0;
+    
 }
 
 .wrapper {
-  background-color:white;
-  padding:4em;
-  text-align: justify;
+    background-color:white;
+    padding:4em;
+    text-align: justify;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -31,6 +35,7 @@ header {
     align-items:center;
     justify-content: center;
     color: white;
+    
 }
 
 h1 {
@@ -46,6 +51,7 @@ nav {
     /*  transition:all 0.5s;*/
     position: relative;
     z-index: 1;
+    
 }
 
 body.fixed-nav nav {
@@ -104,6 +110,10 @@ nav a {
     font-size: 1em;
     color: white;
     padding: 1em;
+        max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #background {
@@ -168,11 +178,11 @@ nav a {
     border: 1px dashed darkorange;
 }
 
-.fas {
+#bio .fas {
     transition: .2s ease-in;
 }
 
-.fas:hover {
+#bio .fas:hover {
     transform: translateX(.2em);
 }
 
@@ -193,7 +203,6 @@ nav a {
     padding: 2em;
     cursor: pointer;
     transition: .2s ease-in-out;
-
 }
 
 .footer-item:hover {
@@ -213,7 +222,7 @@ a:active {
     color: white;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     body nav {font-size: 1.5em; font-weight: 200;}
     .wrapper {padding: 1em; font-size: 2em; font-weight: 200}
     .dev-container {grid-auto-flow: row; grid-template-columns: 1fr 1fr }
