@@ -224,7 +224,7 @@ a:active {
 
 @media (max-width: 1090px) {
     body nav {font-size: 1.5em; font-weight: 200;}
-    .wrapper {padding: 1em; font-size: 1.7em; font-weight: 200}
+    .wrapper {padding: 2em; font-size: 1.6em; font-weight: 200}
     .dev-container {grid-auto-flow: row; grid-template-columns: 1fr 1fr }
     .grid-dev-item {font-size: 2em; padding: 1em}
     .prj-container {grid-template-columns: 1fr 1fr}
